@@ -5,6 +5,7 @@
     <classes>
       <class name="fbaccs.Accaunts">
         <methods>
+          <include name="exit"/>
           <include name="FakeVotes"/>
         </methods>
       </class> <!-- fbaccs.Accaunts -->

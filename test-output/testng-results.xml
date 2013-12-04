@@ -1,17 +1,84 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="1" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="FB" duration-ms="666745" started-at="2013-12-04T13:07:49Z" finished-at="2013-12-04T13:18:56Z">
+  <suite name="Default suite" duration-ms="103915" started-at="2013-12-04T13:55:02Z" finished-at="2013-12-04T13:56:45Z">
     <groups>
     </groups>
-    <test name="FakeVotes" duration-ms="666745" started-at="2013-12-04T13:07:49Z" finished-at="2013-12-04T13:18:56Z">
+    <test name="Default test" duration-ms="103915" started-at="2013-12-04T13:55:02Z" finished-at="2013-12-04T13:56:45Z">
       <class name="fbaccs.Accaunts">
-        <test-method status="PASS" signature="FakeVotes()[pri:0, instance:fbaccs.Accaunts@121c323a]" name="FakeVotes" duration-ms="666731" started-at="2013-12-04T15:07:50Z" finished-at="2013-12-04T15:18:56Z">
+        <test-method status="FAIL" signature="FakeVotes()[pri:0, instance:fbaccs.Accaunts@297b6cae]" name="FakeVotes" duration-ms="103631" started-at="2013-12-04T15:55:02Z" finished-at="2013-12-04T15:56:45Z">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Timed out waiting for page load.
+Command duration or timeout: 90.03 seconds
+Build info: version: '2.37.0', revision: 'a7c61cb', time: '2013-10-18 17:15:02'
+System info: host: 'Voice-ПК', ip: '172.16.50.56', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_25'
+Session ID: e74628b4-a648-4e83-ad63-9cc332711807
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=XP, databaseEnabled=true, cssSelectorsEnabled=true, javascriptEnabled=true, acceptSslCerts=true, handlesAlerts=true, browserName=firefox, browserConnectionEnabled=true, nativeEvents=true, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=25.0.1}]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Timed out waiting for page load.
+Command duration or timeout: 90.03 seconds
+Build info: version: '2.37.0', revision: 'a7c61cb', time: '2013-10-18 17:15:02'
+System info: host: 'Voice-ПК', ip: '172.16.50.56', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_25'
+Session ID: e74628b4-a648-4e83-ad63-9cc332711807
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=XP, databaseEnabled=true, cssSelectorsEnabled=true, javascriptEnabled=true, acceptSslCerts=true, handlesAlerts=true, browserName=firefox, browserConnectionEnabled=true, nativeEvents=true, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=25.0.1}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:193)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:554)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:268)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:79)
+	at fbaccs.Accaunts.FakeVotes(Accaunts.java:49)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:335)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:330)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+Caused by: org.openqa.selenium.remote.ErrorHandler$UnknownServerException: Timed out waiting for page load.
+Build info: version: '2.37.0', revision: 'a7c61cb', time: '2013-10-18 17:15:02'
+System info: host: 'Voice-ПК', ip: '172.16.50.56', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_25'
+Driver info: driver.version: unknown
+	at <anonymous class>.Utils.installClickListener/e<(file:///C:/Users/Voice/AppData/Local/Temp/anonymous4567147111813909146webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:7521)
+	at <anonymous class>.WebLoadingListener/e(file:///C:/Users/Voice/AppData/Local/Temp/anonymous4567147111813909146webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:3333)
+	at <anonymous class>.WebLoadingListener/<(file:///C:/Users/Voice/AppData/Local/Temp/anonymous4567147111813909146webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:3340)
+	at <anonymous class>.fxdriver.Timer.prototype.setTimeout/<.notify(file:///C:/Users/Voice/AppData/Local/Temp/anonymous4567147111813909146webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:396)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- FakeVotes -->
+        <test-method status="PASS" signature="exit()[pri:0, instance:fbaccs.Accaunts@297b6cae]" name="exit" is-config="true" duration-ms="251" started-at="2013-12-04T15:56:45Z" finished-at="2013-12-04T15:56:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- exit -->
       </class> <!-- fbaccs.Accaunts -->
-    </test> <!-- FakeVotes -->
-  </suite> <!-- FB -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

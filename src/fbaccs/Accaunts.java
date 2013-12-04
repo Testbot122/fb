@@ -11,6 +11,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.Test;
 
 public class Accaunts {
@@ -64,7 +65,7 @@ public class Accaunts {
     	driver.get("https://www.facebook.com/musicnaij?hc_location=stream");
     	likeGroup();
     	likePost();
-    	sharePost();
+    	//sharePost();
     	System.out.println("===================================================================");
     }
     
@@ -74,16 +75,21 @@ public class Accaunts {
 	}
 	
 	public void likePost() throws Exception {
-		WebDriverWait wait = new WebDriverWait(driver, 30);
 		Thread.sleep(3000);
 		 List<WebElement> list1=driver.findElements(By.cssSelector("div:nth-child(7) > div:nth-child(1) > span:nth-child(2) > span:nth-child(1) > a:nth-child(1)"));
 	      WebElement like = list1.get(0);
-	    
+	      WebElement like2 = list1.get(1);
 		if(like.getText().equals("Like")) {
-			wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("div:nth-child(7) > div:nth-child(1) > span:nth-child(2) > span:nth-child(1) > a:nth-child(1)"))).click();
-			System.out.println("Лакнул пост: Да");
+			like.click();
+			System.out.println("Лакнул пост1: Да");
 		} else {
-			System.out.println("Лайкнул пост: Нет, пост уже лайкнут");
+			System.out.println("Лайкнул пост1: Нет, пост уже лайкнут");
+		}
+		if(like2.getText().equals("Like")) {
+			like2.click();
+			System.out.println("Лакнул пост2: Да");
+		} else {
+			System.out.println("Лайкнул пост2: Нет, пост уже лайкнут");
 		}
 	}
 	
@@ -121,5 +127,10 @@ public class Accaunts {
 			System.out.println("Добавлен лайк группы");
 			driver.navigate().refresh();
 		}
+	}
+	
+	@AfterTest
+	public void exit() {
+		driver.quit();
 	}
 }
