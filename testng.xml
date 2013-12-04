@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="FB" parallel="none">
+  <test name="FakeVotes">
+    <classes>
+      <class name="fbaccs.Accaunts"/>
+    </classes>
+  </test> <!-- FakeVotes -->
+</suite> <!-- FB -->

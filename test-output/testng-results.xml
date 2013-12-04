@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="FB" duration-ms="666745" started-at="2013-12-04T13:07:49Z" finished-at="2013-12-04T13:18:56Z">
+    <groups>
+    </groups>
+    <test name="FakeVotes" duration-ms="666745" started-at="2013-12-04T13:07:49Z" finished-at="2013-12-04T13:18:56Z">
+      <class name="fbaccs.Accaunts">
+        <test-method status="PASS" signature="FakeVotes()[pri:0, instance:fbaccs.Accaunts@121c323a]" name="FakeVotes" duration-ms="666731" started-at="2013-12-04T15:07:50Z" finished-at="2013-12-04T15:18:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FakeVotes -->
+      </class> <!-- fbaccs.Accaunts -->
+    </test> <!-- FakeVotes -->
+  </suite> <!-- FB -->
+</testng-results>
